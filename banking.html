@@ -19,16 +19,16 @@
         <section class="mt-8 ">
             <div class="  grid grid-cols-3 gap-4">
                 <div class="bg-orange-400 p-8  rounded">
-                    <p class="text-2xl text-white font-semi-bold">Deoposit Amount</p>
-                    <p class="text-2xl text-white">$00</p>
+                    <p id="deposit" class="text-2xl text-white font-semi-bold">Deoposit Amount</p>
+                    <p class="text-2xl text-white">$<span id="total-deposit">00</span> </p>
                 </div>
                 <div class="bg-amber-400 p-8 rounded">
                     <p class="text-2xl text-white font-semi-bold">Withdraw</p>
-                    <p class="text-2xl text-white">$00</p>
+                    <p class="text-2xl text-white">$<span id="total-withdraw">00</span></p>
                 </div>
                 <div class="bg-pink-400 p-8 rounded">
                     <p class="text-2xl text-white font-semi-bold">Balance</p>
-                    <p class="text-2xl text-white">$00</p>
+                    <p class="text-2xl text-white">$<span id="total-balance">1200</span></p>
                 </div>
             </div>
         </section>
@@ -41,7 +41,7 @@
                         <input id="deposit-amount" class="border  px-2 mb-4 border-gray-100 rounded block " type="text"
                             placeholder="$ you want to deposit">
 
-                        <button id="deoposit-button"
+                        <button id="doposit-button"
                             class="bg-emerald-400   text-white px-4 py-2 rounded font-semi-bold">Deposit</button>
                     </div>
                 </div>
@@ -59,6 +59,7 @@
             </div>
         </section>
     </main>
+    <script src="js/banking.js"></script>
 </body>
 
 </html>
